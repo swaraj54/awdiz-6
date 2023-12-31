@@ -11,7 +11,7 @@
         }
 
         #parent-div {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             /* height: 600px; */
             width: 100%;
         }
@@ -35,6 +35,53 @@
 
         .m-l {
             margin-left: 100px;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        tr {
+            height: 100px;
+        }
+
+        th,
+        td {
+            width: 300px;
+            font-size: larger;
+        }
+
+        /* table>tbody>tr>td:nth-child(1) {
+            text-align: left;
+        } */
+
+        .t-l {
+            text-align: left;
+        }
+
+        #cer {
+            border: 2px solid green;
+            height: 500px;
+            width: 100%;
+        }
+
+        .fs-l {
+            font-size: 28px;
+        }
+
+        form {
+            border: 2px solid black;
+            width: 20%;
+            text-align: center;
+            margin: auto;
+        }
+
+        form>input {
+            width: 170px;
         }
     </style>
 </head>
@@ -95,10 +142,92 @@
             </div>
         </div>
 
-
-        <div>
-
+        <div id="education">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>School Name</th>
+                        <th>Year of Graduation</th>
+                        <th>% / grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="t-l">1</td>
+                        <td>Awdiz Insitute</td>
+                        <td>2024</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td class="t-l">2</td>
+                        <td>Senior Collage</td>
+                        <td>2019</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td class="t-l">3</td>
+                        <td>Collage</td>
+                        <td>2015</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td class="t-l">4</td>
+                        <td>My School</td>
+                        <td>2013</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
+        <div id="cer">
+            <h1>Certifications</h1>
+            <ol class="m-l fs-l">
+                <li>Meta React cerifications
+                    <a target="_blank"
+                        href="https://www.coursera.org/professional-certificates/meta-front-end-developer">🔗</a>
+                </li>
+                <li>Meta Backend cerifications
+                    <a target="_blank"
+                        href="https://www.coursera.org/professional-certificates/meta-front-end-developer">🔗</a>
+                </li>
+                <li>Linkedin HTML cerifications
+                    <a target="_blank"
+                        href="https://www.coursera.org/professional-certificates/meta-front-end-developer">🔗</a>
+                </li>
+                <li>Linkedin CSS cerifications
+                    <a target="_blank"
+                        href="https://www.coursera.org/professional-certificates/meta-front-end-developer">🔗</a>
+                </li>
+                <li>Linkedin JS cerifications
+                    <a target="_blank"
+                        href="https://www.coursera.org/professional-certificates/meta-front-end-developer">🔗</a>
+                </li>
+            </ol>
+        </div>
+
+        <div id="ach">
+            <h1>Achivements</h1>
+            <ul class="m-l">
+                <li>Got first rank in hackerrank dsa test. <a
+                        href="https://www.hackerrank.com/skills-verification/frontend_developer_react">🔗</a>
+                </li>
+                <li>Got first rank in hackerrank React test. <a
+                        href="https://www.hackerrank.com/skills-verification/frontend_developer_react">🔗</a></li>
+            </ul>
+        </div>
+
+        <form>
+            <!-- <fieldset>
+                <legend>Contact Me</legend> -->
+            <label>Type your message</label><br />
+            <textarea required type="text"></textarea><br />
+            <label>Type your email</label><br />
+            <input required style="border: 1px solid black;" type="email" /><br />
+            <input type="submit" value="Submit message." />
+            <!-- </fieldset> -->
+        </form>
 
     </div>
 </body>
