@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input />
+    <textarea rows="10" cols="10"></textarea>
+
+    <button onclick="alert('You have clicked')">Click me</button>
+
+    <form>
+        <fieldset>
+            <legend>Newsletter</legend>
+            <label>Subscribe our Newsletter</label><br />
+            <input type="email" /><br />
+            <input type="submit" />
+        </fieldset>
+    </form>
+
+
+    <input value="dragonempp" readonly />
+
+    <input value="dragonempp" disabled />
+
+    <input type="text" />
+    <input type="text" size="50" />
+
+    <input maxlength="2" />
+
+    <form>
+        <input required type="number" max="30" min="0" /><br />
+        <input type="submit" />
+    </form>
+
+    <input type="text" pattern="\w{3,16}" />
+
+    <input type="text" required />
+    <button>Submit</button>
+
+
+    <input type="email" autofocus /><br />
+    <input type="password" />
+    <form>
+        <input type="text" id="uname" name="name" required size="45" pattern="[a-z]{4,8}"
+            title="4 to 8 lowercase letters" />
+        <input type="submit" />
+    </form>
+
+
+    <form action="http://localhost:8000/api/v1/register">
+        <input /><br />
+        <input type="submit" />
+    </form>
+    <form>
+        <input /><br />
+        <input type="submit" />
+    </form>
+
+</body>
+
+
+</html>
