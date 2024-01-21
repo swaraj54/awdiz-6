@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen {
+            display: flex;
+            width: 4px solid black;
+            justify-content: space-around;
+        }
+
+        #screen>div {
+            width: 45%;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            border: 2px solid red;
+        }
+
+        #screen>div:nth-child(3) {
+            display: none;
+        }
+
+        @media screen and (max-width : 650px) {
+
+            #screen>div {
+                font-size: 20px;
+            }
+
+            #screen>div:nth-child(3) {
+                display: block;
+            }
+
+            #screen>div:nth-child(2) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div> chidlren
+            <div>Grand children</div>
+        </div>
+        <div>Contact us</div>
+        <div>bars</div>
+    </div>
+</body>
+
+</html>
