@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19</title>
+    <style>
+        /* .myDiv {
+            border: 2px solid red;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        } */
+
+        .myNavbar {
+            height: 60px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+            font-size: 40px;
+        }
+
+            .d-none {
+                display: none;
+            }
+
+
+        @media screen and (max-width : 1000px) {
+            .d-none-mobile {
+                display: none;
+            }
+            .d-none {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="myDiv">
+        <p>Vertically center</p>
+    </div> -->
+
+    <div class="myNavbar">
+        <div>Logo</div>
+        <div class="d-none-mobile">Profile</div>
+        <div class="d-none">Bars</div>
+    </div>
+
+</body>
+
+</html>
